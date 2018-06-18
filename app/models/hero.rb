@@ -7,4 +7,9 @@ class Hero
     @power = params[:power]
     @biography = params[:biography]
   end
+
+  def self.all
+    @@all
+  end
+  
 end
