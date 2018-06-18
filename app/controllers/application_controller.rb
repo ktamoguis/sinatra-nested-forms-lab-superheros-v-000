@@ -9,7 +9,7 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-      @pteam = Team.new(params[:pirate])
+      @pteam = Team.new(params[:team])
 
       params[:pirate][:ships].each do |details|
         Ship.new(details)
